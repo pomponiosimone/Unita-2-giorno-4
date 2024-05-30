@@ -22,7 +22,7 @@ padding-block: 20px;
 }
 i { color: grey;
 position: absolute;
-left: 45%;}
+left: 50%;}
  .parole :first-of-type {
     display: inline-block;
    /* transform-origin: center;
@@ -30,24 +30,35 @@ left: 45%;}
   }
 
   .parole :first-of-type{
-    animation: FadeIn 4s
-  }
+    animation: FadeIn 5s forwards}
+
   .parole :nth-of-type(2) {
-    animation: FadeOut 4s;
-    left: 60%;
+    animation: FadeOut 15s forwards;
+    
+  }
+  .parole :nth-of-type(3) {
+    animation: FadeOut2 25s forwards;
+   
   }
   @keyframes FadeIn {
-    from  { opacity: 0;}
-    to {opacity: 1}
+    0%  { opacity: 1;}
+    
+    50%{opacity: 0}
+    100% {opacity: 0}
   }
 @keyframes FadeOut {
-    from  { opacity: 1;}
-    to {opacity: 0}
+    0% { opacity: 0;}
+    50% {opacity: 1}
+    100% {opacity: 0;}
+
 }
-/*.parole :nth-of-type(2)
-{ display: none;} */
-.parole :nth-of-type(3)
-{ display: none;}
+@keyframes FadeOut2 {
+    0% { opacity: 0;}
+    50% {opacity: 0}
+    100% {opacity: 1;}
+}
+
+
 
   /*
   @keyframes ruota {
