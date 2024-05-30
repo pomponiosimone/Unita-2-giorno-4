@@ -20,4 +20,58 @@ text-align: left;
 padding-block: 20px;
 
 }
-i { color: grey}
+i { color: grey;
+position: absolute;
+left: 45%;}
+ .parole :first-of-type {
+    display: inline-block;
+   /* transform-origin: center;
+    animation: ruota 3s infinite linear; */
+  }
+
+  .parole :first-of-type{
+    animation: FadeIn 4s
+  }
+  .parole :nth-of-type(2) {
+    animation: FadeOut 4s;
+    left: 60%;
+  }
+  @keyframes FadeIn {
+    from  { opacity: 0;}
+    to {opacity: 1}
+  }
+@keyframes FadeOut {
+    from  { opacity: 1;}
+    to {opacity: 0}
+}
+/*.parole :nth-of-type(2)
+{ display: none;} */
+.parole :nth-of-type(3)
+{ display: none;}
+
+  /*
+  @keyframes ruota {
+    0% { transform: rotate(0deg); } 
+    100% { transform: rotate(30deg); } 
+  }
+  .parole :nth-of-type(2) {
+    display: inline-block;
+    transform-origin: center;
+    animation: ruota 3s infinite linear; 
+  }
+  
+  @keyframes ruota {
+    0% { transform: rotate(0deg); } 
+    100% { transform: rotate(180deg); } 
+  }
+
+  .parole :nth-of-type(3) {
+    display: inline-block;
+    transform-origin: center;
+    animation: ruota 3s infinite linear; 
+  }
+  
+  @keyframes ruota {
+    0% { transform: rotate(0deg); } 
+    100% { transform: rotate(180deg); } 
+  }
