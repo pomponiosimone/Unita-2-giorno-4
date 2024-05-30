@@ -1,0 +1,91 @@
+.container {
+  display: flex;
+  margin-top: 30px;
+  width: 1300px;
+  margin-inline: auto;
+  height: 500px;
+  background-color: grey;
+  padding: 30px;
+  padding-top: 50px;
+  flex-wrap: wrap;
+}
+.task {
+  display: flex;
+  flex-direction: row;
+  width: 280px;
+  height: 190px;
+  border: none;
+  margin-inline: auto;
+  margin-left: 20px;
+  margin-bottom: 40px;
+  font-style: italic;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 3px 3px black;
+ transition: scale 2s;
+}
+
+
+h1 {
+  font-size: 2em;
+  text-align: center;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 20px;
+}
+
+.primo,
+.quinto,
+.settimo {
+  background-image: linear-gradient(
+    175deg,
+    #ffffdf 0,
+    #ffffcb 16.67%,
+    #fbfbb3 33.33%,
+    #dde697 50%,
+    #bed17d 66.67%,
+    #a2c168 83.33%,
+    #89b45a 100%
+  );
+  transform: rotate(-6deg);
+}
+.secondo,
+.quarto,
+.ottavo {
+  background-image: linear-gradient(
+    175deg,
+    #e4ffb5 0,
+    #d3ffb8 12.5%,
+    #bcffb6 25%,
+    #9ffeb0 37.5%,
+    #78efa8 50%,
+    #46e0a1 62.5%,
+    #00d5a1 75%,
+    #00cea6 87.5%,
+    #00cbaf 100%
+  );
+  transform: rotate(8deg);
+}
+
+.terzo,
+.sesto {
+  background-image: linear-gradient(
+    175deg,
+    #ffbdff 0,
+    #f2a3ff 25%,
+    #c883ee 50%,
+    #9a66db 75%,
+    #6e52ce 100%
+
+  );
+  transform: rotate(-7.5deg);
+}
+
+.task:hover {
+  transform: scale(1.2,1.3);
+  transition: transform 0.8s ease;
+}

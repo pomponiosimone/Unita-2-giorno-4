@@ -8,3 +8,16 @@
 7 ritardare progressivamente l'animazione delle altre 2 parole 
 */
 
+#testoAlternato {
+    border: 2px solid black;
+    margin-inline: auto;
+    margin-top: 50px;
+    width: 650px;
+    height: 80px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size:1.3em;
+text-align: left;
+padding-block: 20px;
+
+}
+i { color: grey}
